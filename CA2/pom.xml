@@ -8,6 +8,6 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>18</maven.compiler.release>
-        <exec.mainClass>com.cct.ca2.CA2</exec.mainClass>
+        <exec.mainClass>com.cct.ca_2.CA2</exec.mainClass>
     </properties>
 </project>
