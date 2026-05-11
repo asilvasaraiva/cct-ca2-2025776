@@ -28,7 +28,7 @@ public class SearchUtil {
 
         if (index != -1) {
             Employee found = sorted.get(index);
-            System.out.println("\n*** RECORD FOUND ***");
+            System.out.println("\n --- RECORD FOUND ---");
             System.out.println("Name: " + found.getFullName());
             System.out.println("Manager Type: " + found.getManagerType());
             System.out.println("Department: " + found.getDepartment());
