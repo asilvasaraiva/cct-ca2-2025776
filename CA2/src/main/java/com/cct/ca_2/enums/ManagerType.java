@@ -8,17 +8,16 @@ package com.cct.ca_2.enums;
  *
  * @author alexsandrosaraiva
  */
-public enum Department {
-    CUSTOMER_SERVICE(1, "Customer Service"),
-    HR(2, "HR"),
-    FINANCE(3, "Finance"),
-    IT_DEVELOPMENT(4, "IT Development"),
-    SALES(5, "Sales");
+public enum ManagerType {
+    HEAD_MANAGER(1, "Head Manager"),
+    SENIOR_MANAGER(2, "Senior Manager"),
+    ASSISTANT_MANAGER(3, "Assistant Manager"),
+    TEAM_LEAD(4, "Team Lead");
 
     private final int value;
     private final String label;
 
-    Department(int value, String label) {
+    ManagerType(int value, String label) {
         this.value = value;
         this.label = label;
     }
@@ -28,9 +27,9 @@ public enum Department {
     @Override
     public String toString() { return label; }
 
-    public static Department fromValue(int v) {
-        for (Department d : values()) {
-            if (d.value == v) return d;
+    public static ManagerType fromValue(int v) {
+        for (ManagerType m : values()) {
+            if (m.value == v) return m;
         }
         return null;
     }
