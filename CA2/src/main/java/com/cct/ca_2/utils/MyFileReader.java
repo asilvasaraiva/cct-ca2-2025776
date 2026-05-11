@@ -4,10 +4,6 @@
  */
 package com.cct.ca_2.utils;
 
-/**
- *
- * @author alexsandrosaraiva
- */
 import com.cct.ca_2.entities.Employee;
 import java.io.BufferedReader;
 import java.io.File;
@@ -16,6 +12,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ *
+ * @author alexsandrosaraiva
+ */
 public class MyFileReader {
 
     /**
