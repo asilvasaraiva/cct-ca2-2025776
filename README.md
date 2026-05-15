@@ -96,4 +96,4 @@ This project was developed to apply and reinforce the following concepts:
 
 ## Author
 
-This project was developed by **Alex Sandro Saraiva** as part of the coursework for the **Algorithms and Data Structures** discipline.
+This project was developed by **Alexsandro Saraiva** as part of the coursework for the **Algorithms and Data Structures** discipline.
