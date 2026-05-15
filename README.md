@@ -1,8 +1,8 @@
-# Bank Employee Management System - CA2 
+# Bank Employee Management System
 
 ## Project Overview
 
-This project, **Bank Employee Management System**, is an academic project developed for the **Algorithms and Data Structures** course. The main goal of this project is to demonstrate the application of fundamental algorithms and data structures in a practical scenario. The system is designed to manage employee records for a fictional bank, providing functionalities such as sorting, searching, and organizing employees in a binary tree structure.
+This project, **Bank Employee Management System**, is an academic project developed for the **Algorithms and Constructs** course. The main goal of this project is to demonstrate the application of fundamental algorithms and data structures in a practical scenario. The system is designed to manage employee records for a fictional bank, providing functionalities such as sorting, searching, and organizing employees in a binary tree structure.
 
 ## Features
 
@@ -13,11 +13,11 @@ The system includes the following key features:
    - Validates the file format and loads employee data into the system.
 
 2. **Sorting**:
-   - Implements **Merge Sort** recursive to sort employee records by their full names.
+   - Implements **Merge Sort** to sort employee records by their full names.
    - Guarantees `O(n log n)` complexity and maintains the stability of records with the same name.
 
 3. **Searching**:
-   - Implements **Binary Search** recursive to efficiently find employees by their full names in a sorted list.
+   - Implements **Binary Search** to efficiently find employees by their full names in a sorted list.
    - Provides `O(log n)` complexity for search operations.
 
 4. **Binary Tree**:
@@ -96,4 +96,4 @@ This project was developed to apply and reinforce the following concepts:
 
 ## Author
 
-This project was developed by **Alexsandro Saraiva** as part of the coursework for the **Algorithms and Data Structures** discipline.
+This project was developed by **Alexsandro Saraiva** as part of the coursework for the **Algorithms and Constructs** discipline.
