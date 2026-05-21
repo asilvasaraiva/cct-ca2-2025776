@@ -8,31 +8,49 @@ import com.cct.ca_2.entities.Employee;
 import java.util.List;
 
 /**
- *
- * @author alexsandrosaraiva
-  * Recursive Binary Search for Employee lists.
+ * Recursive Binary Search implementation for Employee lists.
  *
  * Why Binary Search:
  *   For this project the list will be sorted already enabling O(log n) complexity.
  *   Linear search would be O(n) per query, being inefficient for large lists.
+ *
+ * @author alexsandrosaraiva
  */
 public class BinarySearch {
-       /**
-     * Returns the index of the employee with the given full name, or -1 if not found.
-     * @param list
-     * @param target
-     * @param low
-     * @param high
-     * @return index expected or -1 if not found
+
+    /**
+     * Recursively searches for an employee by full name within a sorted list.
+     *
+     * The list must be sorted alphabetically by full name (case-insensitive)
+     * before calling this method, as binary search relies on sorted order.
+     *
+     * Time complexity:  O(log n) — halves the search space on each recursive call.
+     * Space complexity: O(log n) — due to recursive call stack depth.
+     *
+     * @param list   The sorted list of Employee objects to search within.
+     * @param target The full name of the employee to find (case-insensitive).
+     * @param low    The lower bound index of the current search range.
+     * @param high   The upper bound index of the current search range.
+     * @return       The index of the matching employee, or -1 if not found.
      */
     public static int search(List<Employee> list, String target, int low, int high) {
+
+        // Base case: search range is exhausted, target not found
         if (low > high) return -1;
 
+        // Calculate the middle index of the current search range
         int mid = (low + high) / 2;
+
+        // Compare the middle employee's full name with the target (case-insensitive)
         int cmp = list.get(mid).getFullName().compareToIgnoreCase(target);
 
-        if (cmp == 0)     return mid;
-        if (cmp > 0)      return search(list, target, low, mid - 1);
+        // Exact match found — return the current index
+        if (cmp == 0) return mid;
+
+        // Middle name is alphabetically greater — search the left half
+        if (cmp > 0) return search(list, target, low, mid - 1);
+
+        // Middle name is alphabetically smaller — search the right half
         return search(list, target, mid + 1, high);
     }
 }

@@ -7,6 +7,7 @@ package com.cct.ca_2.enums;
 /**
  *
  * @author alexsandrosaraiva
+ * Class which represents the Main Menu enum, with a value and label for each menu option, and a method to get the enum from an integer value.
  */
 public enum MainMenu {
     SORT(1, "SORT"),

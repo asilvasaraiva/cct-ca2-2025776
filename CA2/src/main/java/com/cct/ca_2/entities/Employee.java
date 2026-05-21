@@ -7,6 +7,7 @@ package com.cct.ca_2.entities;
 /**
  *
  * @author alexsandrosaraiva
+ * Classe which Helds the Employee data, with the necessary getters and a toString method for formatted output.
  */
 public class Employee {
 

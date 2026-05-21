@@ -7,6 +7,7 @@ package com.cct.ca_2.entities;
 /**
  *
  * @author alexsandrosaraiva
+ * Class which represents a node in a binary tree, holding an Employee object and references to left and right child nodes.
  */
 public class TreeNode {
 

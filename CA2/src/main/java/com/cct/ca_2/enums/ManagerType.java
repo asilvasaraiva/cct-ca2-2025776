@@ -7,6 +7,7 @@ package com.cct.ca_2.enums;
 /**
  *
  * @author alexsandrosaraiva
+ * Class which represents the Manager Type enum, with a value and label for each manager type, and a method to get the enum from an integer value.
  */
 public enum ManagerType {
     HEAD_MANAGER(1, "Head Manager"),

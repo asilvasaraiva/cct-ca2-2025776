@@ -7,6 +7,7 @@ package com.cct.ca_2.enums;
 /**
  *
  * @author alexsandrosaraiva
+ * Class which represents the Department enum, with a value and label for each department, and a method to get the enum from an integer value.
  */
 public enum Department {
     CUSTOMER_SERVICE(1, "Customer Service"),
